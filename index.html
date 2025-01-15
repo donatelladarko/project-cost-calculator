@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Cost Calculator | G&G Creative</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <section id="hero">
+        <h1>Website Cost Calculator</h1>
+        <p>Free and Easy-to-Use</p>
+        <p>Unlock Your Custom Web Design Price with Our Free Website Cost Calculator.</p>
+        <button id="start-calculator">Start Your Estimate</button>
+    </section>
+
+    <!-- What We Include Section -->
+    <section id="included">
+        <h2>Every Website We Build Includes:</h2>
+        <ul>
+            <li>Site planning kickoff</li>
+            <li>Design and development</li>
+            <li>Content migration</li>
+            <li>Project manager</li>
+            <li>Account manager</li>
+            <li>Website content management system</li>
+            <li>Technical SEO</li>
+            <li>Google Analytics integration</li>
+            <li>Hand-off tutorials</li>
+        </ul>
+    </section>
+
+    <!-- Calculator Section -->
+    <section id="calculator">
+        <form id="calculator-form">
+            <!-- Branding Section -->
+            <div class="calculator-section">
+                <h2>Branding Options</h2>
+                <div class="calculator-item">
+                    <span>Complete Branding Upgrade</span>
+                    <span>5 hours</span>
+                    <span id="branding-upgrade-cost">$0</span>
+                </div>
+                <div class="calculator-item">
+                    <span>Logo Refresh</span>
+                    <span>5 hours</span>
+                    <span id="logo-refresh-cost">$0</span>
+                </div>
+                <div class="calculator-item">
+                    <span>Line Card Redesign</span>
+                    <span>4 hours</span>
+                    <span id="line-card-redesign-cost">$0</span>
+                </div>
+                <div class="calculator-item">
+                    <span>Line Card Integration</span>
+                    <span>5 hours</span>
+                    <span id="line-card-integration-cost">$0</span>
+                </div>
+            </div>
+
+            <!-- Website Features Section -->
+            <div class="calculator-section">
+                <h2>Website Features</h2>
+                <div class="calculator-item">
+                    <span>Parametric Search</span>
+                    <span>3 hours</span>
+                    <span id="parametric-search-cost">$0</span>
+                </div>
+                <div class="calculator-item">
+                    <span>Interactive Maps</span>
+                    <span>2 hours</span>
+                    <span id="interactive-maps-cost">$0</span>
+                </div>
+                <div class="calculator-item">
+                    <span>Events Calendar</span>
+                    <span>5 hours</span>
+                    <span id="events-calendar-cost">$0</span>
+                </div>
+                <div class="calculator-item">
+                    <span>Sales Chat Feature</span>
+                    <span>4 hours</span>
+                    <span id="sales-chat-cost">$0</span>
+                </div>
+            </div>
+
+            <!-- Hosting & Policies Section -->
+            <div class="calculator-section">
+                <h2>Hosting & Policies</h2>
+                <div class="calculator-item">
+                    <span>Annual Managed Hosting</span>
+                    <span>Fixed Price</span>
+                    <span>$500</span>
+                </div>
+                <div class="calculator-item">
+                    <span>Accessibility Plugin Management</span>
+                    <span>Fixed Price</span>
+                    <span>$1,000</span>
+                </div>
+                <div class="calculator-item">
+                    <span>Website Policies</span>
+                    <span>Fixed Price</span>
+                    <span>$250</span>
+                </div>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="button" onclick="calculateEstimate()">Get Your Estimate</button>
+        </form>
+    </section>
+
+    <!-- Result Section -->
+    <section id="result">
+        <h2>Your Project Estimate</h2>
+        <p id="estimate-output">$0</p>
+        <button id="email-estimate">Email My Estimate</button>
+    </section>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
