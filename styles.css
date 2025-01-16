@@ -1,58 +1,92 @@
-/* styles.css */
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
-
+/* General Styles */
 body {
     font-family: 'Inter', sans-serif;
-    background-color: #f9f9f9;
     margin: 0;
     padding: 0;
-}
-
-h1, h2 {
-    text-align: center;
     color: #333;
+    background-color: #f9f9f9;
 }
 
-#hero {
-    background-color: #0073e6;
-    color: white;
-    padding: 20px;
+/* Header Styles */
+header {
     text-align: center;
+    background-color: #000;
+    color: #fff;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-bottom: 5px solid #0a0;
 }
 
-#calculator-form {
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+header ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 600px;
+    text-align: left;
+}
+
+header ul li {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+    line-height: 1.4;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+header ul li::before {
+    content: "✔";
+    color: #0a0;
+    position: absolute;
+    left: 0;
+    top: 0.2rem;
+}
+
+/* Main Content */
+main {
     max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: white;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: #fff;
     border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-label {
+label, select, input, fieldset, button {
     display: block;
-    margin: 10px 0;
+    margin: 1rem 0;
+    width: 100%;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
 }
 
 button {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    background-color: #0073e6;
-    color: white;
+    background-color: #0a0;
+    color: #fff;
     border: none;
+    padding: 0.75rem 1.5rem;
     border-radius: 4px;
-    font-size: 16px;
     cursor: pointer;
-    font-weight: 600;
+    font-size: 1rem;
 }
 
 button:hover {
-    background-color: #005bb5;
+    background-color: #080;
 }
 
-#result {
-    text-align: center;
-    margin-top: 20px;
+/* Results Section */
+#results {
+    margin-top: 2rem;
+    font-size: 1.2rem;
 }
